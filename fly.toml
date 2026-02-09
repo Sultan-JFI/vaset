@@ -1,15 +1,9 @@
-app = "نام-اپلیکیشن-شما"
-primary_region = "fra" # یا هر ریجنی که نزدیک‌تر است
-
-[http_service]
-  internal_port = 8080
-  force_https = true
-  auto_stop_machines = false
-  auto_start_machines = true
+app = "fly-v2ray-test"
+primary_region = "fra"
 
 [[services]]
   protocol = "tcp"
   internal_port = 8080
+
   [[services.ports]]
     port = 443
-    handlers = ["tls", "http"]
